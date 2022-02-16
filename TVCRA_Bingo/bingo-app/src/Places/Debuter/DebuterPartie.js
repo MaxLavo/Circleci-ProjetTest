@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Grid } from "@mui/material";
-import TypeJeu from "../../Components/VisualisationTypeJeu/TypeJeu.js";
+import TypeJeu from "C:/Users/1835504/Desktop/circleci public repos/TVCRA_Bingo/bingo-app/src/Components/VisualisationTypejeu/TypeJeu.js";
 import EtatBoules from "../../Components/Etat/EtatBoules.js";
 import Tirer from "../../Components/Tirer/Tirer.js";
 import TableauBingo from "../../Components/Tableau/TableauBingo.js";
