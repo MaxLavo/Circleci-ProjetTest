@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Grid } from "@mui/material";
-import TypeJeu from "../../Components/VisualisationTypejeu/TypeJeu.js";
+import TypeJeu from "../../Components/VisualisationTypeJeu/TypeJeu.js";
 import EtatBoules from "../../Components/Etat/EtatBoules.js";
 import Tirer from "../../Components/Tirer/Tirer.js";
 import TableauBingo from "../../Components/Tableau/TableauBingo.js";
@@ -12,7 +12,11 @@ const DebuterPartie = (props) => {
   const [pattern, setPattern] = useState([]);
   const [derniereBoule, setDerniereBoule] = useState("");
   let { listeBouleTirer, setMenu } = props;
-  const [nbBoules, setNbBoules] = useState(listeBouleTirer.length);
+
+  const [nbBoules, setNbBoules] = () => {
+    if (listeBouleTirer === null) useState((listeBouleTirer = [0]));
+    else useState(listeBouleTirer.length);
+  };
 
   useEffect(() => {}, []);
 
