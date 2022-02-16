@@ -6,6 +6,9 @@ jobs:
       - image: cimg/node:17.4.0
     steps:
       - checkout
+      - run: cd ..
+      - run: cd TVCRA_Bingo
+      - run: cd bingo-app
       - run: node --version
       - run: npm --version
       - run: npm install
