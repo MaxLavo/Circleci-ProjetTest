@@ -10,7 +10,7 @@ jobs:
       - run: npm --version
       - run: cd ..
       - run: cd TVCRA_Bingo/bingo-app && npm install
-      - run: npm run test
+      - run: cd TVCRA_Bingo/bingo-app && npm run test
 workflows:
   build:
     jobs:
